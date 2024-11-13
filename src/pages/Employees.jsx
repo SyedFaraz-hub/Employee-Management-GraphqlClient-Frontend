@@ -136,6 +136,25 @@ const Employees = () => {
 
   return (
     <>
+      {
+        loggedUser &&
+        <div className='flex gap-3'>
+          <div className='flex gap-3'>
+            <span className='font-bold'>Logged in as:</span>
+            <span>{loggedUser.email}</span>
+          </div>
+          <span className='font-bold'>Role:</span>
+          <span>{loggedUser.role}</span>
+          <span className='font-bold'>Access:</span>
+          <span>{loggedUser.role === 'admin' ? 'Delete or Update Employee' : 'No Access to Delete or update Employee'}</span>
+        </div>
+      }
+
+      <br />
+
+
+
+
       <Card
         bordered={false}
         className="mb-24"

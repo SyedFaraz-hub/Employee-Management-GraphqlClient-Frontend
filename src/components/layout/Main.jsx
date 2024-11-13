@@ -21,9 +21,6 @@ const Main = ({ children }) => {
 
           </div>
 
-          <button className="absolute top-4 right-4" >
-            <Menu className="w-5 h-5" />
-          </button>
         </div>
         <nav className="flex-1">
           <ul>
